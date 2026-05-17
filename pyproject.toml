@@ -1,0 +1,29 @@
+[project]
+name = "smiles-2026-signal"
+version = "0.1.0"
+description = "Signal SMILES-2026"
+authors = [
+    {name = "Vladislav Ulandaev",email = "ulandaev.vn@phystech.edu"}
+]
+readme = "README.md"
+requires-python = "^3.11"
+dependencies = [
+    "numpy (>=2.4.4,<3.0.0)",
+    "scipy (>=1.17.1,<2.0.0)",
+    "gdown (>=4.4.0,<5.0.0)"
+]
+
+[dependency-groups]
+dev = [
+    "matplotlib (>=3.10.9,<4.0.0)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "ipykernel (>=7.2.0,<8.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
